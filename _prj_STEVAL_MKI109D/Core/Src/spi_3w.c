@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    spi.c
+  * @file    spi_3w.c
   * @brief   This file provides code for the configuration
-  *          of the SPI instances.
+  *          of the SPI 3 wires instances.
   ******************************************************************************
   * @attention
   *
@@ -24,9 +24,10 @@
 
 /* USER CODE END 0 */
 
-SPI_HandleTypeDef hspi1;
-SPI_HandleTypeDef hspi6;
+extern SPI_HandleTypeDef hspi1;
+extern SPI_HandleTypeDef hspi6;
 
+#if 0
 /* SPI1 init function */
 void MX_SPI1_Init(void)
 {
@@ -241,6 +242,7 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
   /* USER CODE END SPI6_MspDeInit 1 */
   }
 }
+#endif
 
 /* USER CODE BEGIN 1 */
 void MX_SPI1_Init_3W(void)
